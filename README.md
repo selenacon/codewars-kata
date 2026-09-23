@@ -1,2 +1,5 @@
-# codewars-kata
-katas of dubious quality
+# Codewars Kata
+**Current KYU: 8**
+
+## Languages used
+- Scala
