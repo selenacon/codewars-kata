@@ -1,5 +1,6 @@
-# Codewars Kata
-**Current KYU: 8**
+# codewars-kata
+Solutions to kata from Codewars to learn coding
 
-## Languages used
-- Scala
+**Now learning:** scala
+
+**Current KYU:** 8
