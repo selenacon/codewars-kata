@@ -5,6 +5,7 @@ python/find-the-sum-of-the-roots-of-a-quadratic-equation
 python/grashopper-combine-strings/.venv
 python/multi_table_for_number/.vscode
 python/multi_table_for_number/venv
+.vscode
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
