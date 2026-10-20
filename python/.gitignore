@@ -1,0 +1,9 @@
+*.class
+*.tasty
+*.log
+.venv
+find-the-sum-of-the-roots-of-a-quadratic-equation.py
+permute-a-palindrome.py
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
