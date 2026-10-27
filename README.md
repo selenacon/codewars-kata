@@ -1,6 +1,4 @@
 # codewars-kata
-Solutions to kata from Codewars to learn coding
+Solutions to kata from Codewars, along with spare exercises.
 
-**Now learning:** python
-
-**Current KYU:** 8
+_**Languages used:** scala, python_
