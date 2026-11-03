@@ -1,28 +1,49 @@
-'''def esMatrizCuadrada(matriz):
-    numeroFilas = len(matriz)
-    for fila in matriz:
-        return len(fila) == numeroFilas'''
+
+'''def esCuadrada(matriz):
+     for fila in matriz:
+        if len(fila) == len(matriz):
+            return True
+        else: return False'''
+
 
 def esAntisimetrica(matriz):
     for fila in matriz:
-        if len(fila) == len(matriz):
-            return matriz[matriz.index(fila)] == matriz[(matriz.index(fila)+1)]
-        else: pass
-    return False
-        '''while matriz[matriz.index(fila)] == matriz[(matriz.index(fila)+1)]:
-            index = 0
-            return matriz.count(matriz[fila[index]][index]) < 2'''
+        try:
+            assert matriz[matriz.index(fila)][matriz.index(fila)] == matriz[matriz.index(fila)+1][matriz.index(fila)+1]
+            assert len(fila) == len(matriz)
+        except:
+            return False
+    i = 0
+    k = 0
+    while True:
+        if matriz[i][round(k)] != -1 * matriz[round(k)][i]:
+            return False
+        elif k > len(matriz):
+            break
+        else:
+            i+=1
+            k+=1/len(matriz)
+    return True
+    
+
+'''for fila in matriz:
+        assert len(fila) == len(matriz)
+        for columna in fila:
+            else: return False
+        return
+    return'''
                 
 
 if __name__ == '__main__':
-    matriz5 = [[1, 0, 0, 0],
-                   [0, 1, 1, 0],
-                   [0, 0, 0, 1]]
+    assert esAntisimetrica([[0, 0, 0],
+                            [0, 0, 0],
+                            [0, 0, 0]]) is True
+''' matriz5 = [[1, 0, 0, 0],
+                [0, 1, 1, 0],
+                [0, 0, 0, 1]]
     
     assert esAntisimetrica(matriz5) is False    
-'''    assert esAntisimetrica([[0, 0, 0],
-                                 [0, 0, 0],
-                                 [0, 0, 0]]) is True
+    
     assert esAntisimetrica([ [0, 1, 2],
                              [-1, 0, 3],
                              [-2, -3, 0]]) is True
