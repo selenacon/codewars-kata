@@ -2,12 +2,10 @@ def getChange(quantity):
 
     coinType = [5, 2, 1]
     coinNumber = []
-    i = 0
-    
     while len(coinNumber) <3:
-        coinNumber.insert(i, quantity // coinType[i])
-        quantity %= coinType[i]
-        i += 1
+        index = len(coinNumber)
+        coinNumber.append(quantity // coinType[index])
+        quantity %= coinType[index]
     return tuple(coinNumber)
     
 # test cases
